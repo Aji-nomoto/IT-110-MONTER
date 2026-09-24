@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Practical Application Activity</title>
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header id="main-heading">
+        <h1>HTML Practical Application Activity</h1>
+        <p>Images, Hyperlinks, Multimedia, Useful Tags, and the HTML DOM</p>
+        <p>Name: Jiefhox G. Monter</p>
+    </header>
+
+
+    <!--NAVIGATION-->
+
+    <nav>
+        <a href="#images">Images</a>
+        <a href="#hyperlinks">Hyperlinks</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#useful-tags">Useful Tags</a>
+        <a href="#html-dom">HTML DOM</a>
+    </nav>
+
+
+    <!--MAIN CONTENT-->
+
+    <main>
+
+        <!--1. IMAGES -->
+
+        <section id="images">
+
+            <h2>1. Images</h2>
+
+            <p>
+                This section demonstrates how images can be added to an
+                HTML page using the <code>&lt;img&gt;</code> element.
+            </p>
+
+            <div class="image-container">
+
+                <img
+                    src="image/bob.jpg"
+                    alt="Spongebob Squarepants"
+                    width="280"
+                    height="190"
+                >
+
+                <img
+                    src="image/pat.jpg"
+                    alt="Patrick Star"
+                    width="280"
+                    height="190"
+                >
+
+                <img
+                    src="image/squid.jpg"
+                    alt="Squidward Tentacles"
+                    width="280"
+                    height="190"
+                >
+
+            </div>
+
+
+            <!--
+            The figure element groups an image with its caption.
+            It makes the relationship between the image and description clear.
+            -->
+
+            <figure>
+
+                <img
+                    src="image/b.jpg"
+                    alt="Bikini Bottom"
+                    width="600"
+                    height="350"
+                >
+
+                <figcaption>
+                    Figure 1. Bikini Bottom.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!--2. HYPERLINKS-->
+
+        <section id="hyperlinks">
+
+            <h2>2. Hyperlinks</h2>
+
+            <p>
+                HTML hyperlinks allow users to navigate between sections,
+                pages, websites, and email addresses.
+            </p>
+            <br>
+
+            <div class="links">
+
+                <!-- Internal link -->
+                <a href="activity.html#useful-tags">
+                    Internal Link: Go to the Useful Tags section
+                </a>
+<br>
+                <!-- External link -->
+                <a
+                    href="https://www.github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    External Link: Visit GitHub
+                </a>
+<br>
+                <!-- Email link -->
+                <a href="mailto:https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">
+                    Email Link: Send Me an Email
+                </a>
+<br>
+                <!-- Same-page anchor link -->
+                <a href="#html-dom">
+                    Same-Page Anchor: Jump to HTML DOM
+                </a>
+<br>
+            </div>
+
+        </section>
+
+
+        <!--3. MULTIMEDIA-->
+
+        <section id="multimedia">
+
+            <h2>3. Multimedia</h2>
+
+            <h3>Audio</h3>
+
+            <p>
+                The following audio element uses the native HTML5
+                <code>&lt;audio&gt;</code> tag with controls.
+            </p>
+
+            <audio controls>
+
+                <source src="media/SpongeBob SquarePants Theme Song.mp3" type="audio/mpeg">
+
+                Audio Title: Free by Kpop.
+
+            </audio>
+
+
+            <h3>Video</h3>
+
+            <p>
+                The following video element uses the native HTML5
+                <code>&lt;video&gt;</code> tag with controls.
+            </p>
+
+            <video controls width="700">
+
+                <source src="media/video.mp4" type="video/mp4">
+
+                Spongebob Dance.
+
+            </video>
+
+            <p class="note">
+                Note: The activity requires the audio and video files to be
+                no more than 2 MB in size.
+            </p>
+
+        </section>
+
+
+        <!--4. USEFUL TAGS-->
+
+        <section id="useful-tags">
+
+            <h2>4. Useful Tags</h2>
+
+            <p>
+                This section demonstrates additional HTML tags that can
+                improve the structure and meaning of a web page.
+            </p>
+
+
+            <!--
+            The blockquote tag is used to display a quotation
+            separately from the main paragraph content.
+            -->
+
+            <blockquote>
+                "The web is built on simple technologies that work together
+                to create useful and accessible experiences."
+            </blockquote>
+
+
+            <!--
+            The abbr tag provides the full meaning of an abbreviation
+            when the user moves the mouse over the abbreviated text.
+            -->
+
+            <p>
+                I am studying
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                as part of my web development activity.
+            </p>
+
+
+            <!--
+            The mark tag highlights important words or information
+            so that they are visually noticeable to the reader.
+            -->
+
+            <p>
+                One important requirement of this activity is
+                <mark>HTML DOM</mark>.
+            </p>
+
+
+            <!--
+            The code tag identifies a piece of computer code
+            inside normal text.
+            -->
+
+            <p>
+                An example of an HTML element is
+                <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>.
+            </p>
+
+
+            <!--
+            The pre tag preserves spaces, line breaks, and formatting
+            when displaying preformatted text or code.
+            -->
+
+            <!--
+            The character entity &copy; displays the copyright symbol
+            without directly typing the symbol into the HTML source.
+            -->
+
+        </section>
+
+
+        <!-- 5. HTML DOM-->
+
+        <section id="html-dom">
+
+            <h2>5. HTML DOM</h2>
+
+            <p>
+                The HTML Document Object Model (DOM) represents a web page
+                as a tree of elements. Each HTML element becomes a node
+                that can have parent and child relationships.
+            </p>
+
+            <h3 id="dom-heading">DOM Tree</h3>
+            <pre>
+                 html
+                    └── body
+                        └── main
+                            └── section#html-dom
+                                ├── h2
+                                ├── p
+                                ├── h3#dom-heading
+                                └── div#dom-container
+                                    └── article#dom-article
+                                        ├── h4#dom-subheading
+                                        ├── p
+                                        └── ul#dom-list
+                                            ├── li
+                                            ├── li
+                                            └── li
+            </pre>
+          
+            <div id="dom-container">
+
+                <article id="dom-article">
+
+                    <h4 id="dom-subheading">
+                        Parent and Child Elements
+                    </h4>       
+
+                    <p>
+                        This paragraph is a child element of the article.
+                    </p>
+
+                    <ul id="dom-list">
+
+                        <li>HTML is the document structure.</li>
+                        <li>Elements can have parents and children.</li>
+                        <li>The DOM represents these relationships.</li>
+
+                    </ul>
+                        <p id="description-text" class="description">Click the button below to change this text.</p>
+                        <button id="action-btn" onclick="document.getElementById('description-text').style.color = 'Green';">Click Me</button>
+
+                </article>
+
+            </div>
+
+
+            <h3>DOM Screenshot</h3>
+
+            <p>
+                Open this page in a browser, right-click the page, select
+                <strong>Inspect</strong>, and open the Elements panel.
+                Locate the elements with IDs and capture a screenshot
+                showing at least five nested elements.
+            </p>
+
+            <img
+                src="dom-tree/DOM1.png"
+                alt="Screenshot of the browser developer tools showing the HTML DOM tree"
+                width="800"
+            >
+             <img
+                src="dom-tree/DOM2.png"
+                alt="Screenshot of the browser developer tools showing the HTML DOM tree"
+                width="800"
+            >
+             <img
+                src="dom-tree/DOM3.png"
+                alt="Screenshot of the browser developer tools showing the HTML DOM tree"
+                width="800"
+            >
+
+        </section>
+
+    </main>
+
+    <!--
+         DOM PARENT-CHILD EXPLANATION
+
+    The main element is the parent of the sections that contain the
+    different parts of the webpage. The section with the id
+    "html-dom" is a child of the main element. Inside the HTML DOM
+    section, the div with the id "dom-container" is the parent of the
+    article element, while the article is the parent of its heading,
+    paragraph, and unordered list elements.
+    -->
+
+</body>
+</html>
