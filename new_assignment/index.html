@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1b4b">
+  <title>CampusHub | Student Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-frame">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="CampusHub home">Campus<span>Hub</span></a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#courses">Courses</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <label class="theme-control" for="theme-toggle">
+        <span>Dark mode</span>
+        <input id="theme-toggle" type="checkbox" role="switch" aria-label="Enable dark mode">
+      </label>
+    </header>
+
+    <main id="home">
+      <section class="profile-card" aria-labelledby="student-name">
+        <div class="avatar" aria-hidden="true">JD</div>
+        <h1 id="student-name">Juan Dela Cruz</h1>
+        <p class="student-details">BS Information Technology, 3rd Year</p>
+
+        <ul class="course-tags" id="courses" aria-label="Courses">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <div class="card-actions">
+          <button class="like-button" id="like-button" type="button">
+            <span aria-hidden="true">♥</span>
+            <span>Like</span>
+            <span class="like-count" id="like-count" aria-live="polite">24</span>
+          </button>
+          <button class="reset-button" id="reset-button" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>© 2026 CampusHub. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
